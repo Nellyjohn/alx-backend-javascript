@@ -2,7 +2,7 @@ export default function createReportObject(employeesList) {
   const departmentNames = Object.keys(employeesList);
   const allEmployees = {};
 
-  for (let department of departmentNames) {
+  for (const department of departmentNames) {
     allEmployees[department.toLowerCase()] = [...employeesList[department]];
   }
 
@@ -10,6 +10,6 @@ export default function createReportObject(employeesList) {
 
   return {
     allEmployees,
-    getNumberOfDepartments
+    getNumberOfDepartments,
   };
 }
