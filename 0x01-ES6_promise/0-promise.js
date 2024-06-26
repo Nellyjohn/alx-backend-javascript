@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable */
 export default function getResponseFromAPI() {
-  return new Promise(function(resolve, reject) {
+  const promise = new Promise(function(resolve, reject) {    
     if (true) {
       resolve("Stuff worked!");
     }
@@ -7,4 +9,5 @@ export default function getResponseFromAPI() {
       reject(Error("It broke"));
     }
   });
+    return promise;
 }
