@@ -18,10 +18,6 @@ module.exports = {
   },
   plugins: ['jest'],
   rules: {
-    'import/extensions': ['error', 'always', {
-      'js': 'never',
-      'jsx': 'never'
-    }]
     'no-console': 'off',
     'no-shadow': 'off',
     'no-restricted-syntax': [
